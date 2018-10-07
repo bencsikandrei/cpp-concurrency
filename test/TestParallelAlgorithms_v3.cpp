@@ -46,7 +46,7 @@ TEST_CASE("parallel_accumulate returns the correct result when passed multiple v
 }	
 
 TEST_CASE("parallel_accumulate is at least as fast as std::accumulate", "[algorithm]") {
-	constexpr unsigned long long nbOfElems{1L << 20};
+	constexpr unsigned long long nbOfElems{1UL << 20};
 	std::vector<unsigned> values(nbOfElems);
 	std::iota(values.begin(), values.end(), 0u);
 
